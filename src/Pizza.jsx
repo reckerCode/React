@@ -8,8 +8,13 @@ const PizzaList = (props) => {
 
 
 const Pizza = (props) => {
-    return(
-        <div className ="pizza">
+
+  const counter = counter++; 
+  return(
+        <div className ="pizza" onclick={() => {
+          console.log();
+          
+        }}>
             <h1>{props.name}</h1>
             <p>{props.description}</p>
             <img src={props.image} alt={props.name} />
